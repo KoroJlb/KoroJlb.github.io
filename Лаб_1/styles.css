@@ -1,0 +1,126 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Сітка */
+.grid-container {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+  grid-template-rows: auto minmax(60px, auto) minmax(250px, auto) auto;
+  gap: 0;
+  background: #cfe2f3;
+  box-sizing: border-box;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 15px;
+  border: 1px solid black;
+  background: white;
+  min-height: 100px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.b2 { 
+  grid-column: 1 / 2; 
+  grid-row: 2 / 4; 
+  background: #fce5cd; 
+  margin-right: 5px;
+}
+
+.b2 .image {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #999;
+}
+
+
+.b3 { 
+  grid-column: 3 / 4; 
+  grid-row: 2 / 4; 
+  background: #d9ead3;
+  margin-right: 5px;
+}
+
+
+.b4 { 
+  grid-column: 5 / 8; 
+  grid-row: 2 / 3; 
+  background: #ffe599; 
+}
+
+
+.b5 { 
+  grid-column: 5 / 6; 
+  grid-row: 3 / 4; 
+  background: #fff;
+  margin-right: 5px;
+}
+
+
+.b6 { 
+  grid-column: 7 / 8; 
+  grid-row: 3 / 4; 
+  background: #d9ead3; 
+}
+
+
+.b1 {
+  grid-column: 1 / 8; 
+  grid-row: 1 / 2;
+  background: #b6d7a8;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;         
+}
+
+.b1 h3 {
+  margin: 0;
+  margin-right: auto;          
+}
+
+.b1 nav {
+  margin-left: auto;           
+}
+
+.b1 nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Блок 7 (підвал) */
+.b7 {
+  grid-column: 1 / 8; 
+  grid-row: 4 / 5;
+  background: #cfe2f3;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;         
+}
+
+.b7 div {
+  margin-right: auto;          
+}
+
+.b7 h3 {
+  margin: 0;
+  margin-left: auto;          
+}
+
